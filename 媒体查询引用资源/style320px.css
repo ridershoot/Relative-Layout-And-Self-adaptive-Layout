@@ -1,0 +1,10 @@
+div {
+  width: 100%;
+  height: 100px;
+}
+div:first-of-type {
+  background-color: pink;
+}
+div:last-of-type {
+  background-color: purple;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>rem适配方案</title>
+  <style type="text/css">
+    html,
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    @media screen and (min-width:320px) {
+      html {
+        /* font-size: 16px; */
+        font-size: calc(320px / 10);
+      }
+    }
+
+    @media screen and (min-width:750px) {
+      html {
+        /* font-size: 37.5px; */
+        font-size: calc(750px / 10);
+      }
+    }
+
+    div {
+      /* width: 2.6667rem;
+      height: 2.6667rem; */
+      width: 1.3334rem;
+      height: 1.3334rem;
+      background-color: pink;
+    }
+
+    /*
+      计算步骤
+      1.明确设备实际像素和CSS像素的区别，375px和750px的区别，开发的时候按照750px给的css像素去开发，但是需要除2？
+      2.将屏幕宽度分成10份，750px / 10 => 75px
+      3.将75px设置为html的fontSize
+      4.将设计图上的元素的宽高除于html的fontSize，即可得出rem值，如100px / 75px => 1.3333rem
+      5.在320px的屏幕上打开，320 / 10 => 32px
+      6.将32px设置为html的fontSize
+      7.元素上的1.3333 * 32px => 42.663px
+    */
+    /*
+      （屏幕实际宽度 * 2） / 10 = html的fontSize
+      元素的rem值 = 原始值 / （屏幕宽度 * 2） / 10
+      各个屏幕值 = rem值 * （（屏幕宽度 * 2） / 10）
+      【（屏幕实际宽度 * 2）/ 10】这部分怎么变都没有关系，只要其中的10是固定的，其中的（屏幕实际宽度 * 2）是和屏幕宽度产生联系的就行
+    */
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>
