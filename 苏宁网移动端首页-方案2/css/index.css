@@ -1,0 +1,130 @@
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.bgImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#app {
+  width: 10rem;
+  max-width: 750px;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+#app .search-content {
+  width: 100%;
+  height: 1.17rem;
+  background-image: url(../img/nav_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0px 0.45rem;
+  box-sizing: border-box;
+}
+#app .search-content .classify {
+  width: 0.48rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+#app .search-content .classify > img {
+  width: 100%;
+}
+#app .search-content .search {
+  flex: 1;
+  padding: 0px 0.45rem;
+  position: relative;
+}
+#app .search-content .search .search-icon {
+  position: absolute;
+  width: 0.48rem;
+  height: 0.48rem;
+  left: 0.69rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#app .search-content .search input {
+  width: 100%;
+  height: 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  padding-left: 0.8rem;
+  padding-right: 0.27rem;
+  font-size: 0.43rem;
+  box-sizing: border-box;
+}
+#app .search-content .login {
+  width: 0.48rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+#app .search-content .login > img {
+  width: 100%;
+}
+#app .advertise {
+  width: 100%;
+  height: 3.05rem;
+  background-image: url(../img/banner_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#app .advertise > div {
+  width: 9.36rem;
+  height: 100%;
+  margin: 0px auto;
+  border-radius: 0.13rem;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+}
+#app .advertise > div img {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#app .hor {
+  width: 100%;
+  height: 3.73rem;
+  display: flex;
+}
+#app .hor img {
+  flex: 1;
+}
+#app .nav {
+  width: 100%;
+  height: 3.79rem;
+}
+#app .nav ul {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1.92rem);
+  padding: 0px;
+  list-style: none;
+}
+#app .nav ul > li {
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 0.32rem;
+}
+#app .nav ul > li > img {
+  width: 1.12rem;
+  height: 1.12rem;
+}
+#app .nav ul > li > span {
+  display: block;
+  font-size: 0.32rem;
+  width: 100%;
+  height: 0.37rem;
+  line-height: 0.37rem;
+}
